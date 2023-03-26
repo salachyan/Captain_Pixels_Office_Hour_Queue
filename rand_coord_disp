@@ -1,0 +1,18 @@
+while(true)do
+    _G.x = math.random(-6,5)
+    _G.y = math.random(-6,5)
+
+    _G.xString = tostring(_G.x)
+    _G.yString = tostring(_G.y)
+    Combination_Coord = "(".._G.xString..",".._G.yString..")"
+    script.Parent.Text = Combination_Coord
+    if(_G.matched)then
+        _G.x = math.random(-5,5)
+        _G.y = math.random(-5,5)
+
+        _G.xString = tostring(_G.x)
+        _G.yString = tostring(_G.y)
+        Combination_Coord = "(".._G.xString..",".._G.yString..")"
+        script.Parent.Text = Combination_Coord
+    end
+end
