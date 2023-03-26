@@ -1,39 +1,39 @@
 -- define function to convert integer to string representation
 local function intToString(num)
-    local numString
-    if num == -5 then
-        numString = "NegFive"
-    elseif num == -4 then
-        numString = "NegFour"
-    elseif num == -3 then
-        numString = "NegThree"
-    elseif num == -2 then
-        numString = "NegTwo"
-    elseif num == -1 then
-        numString = "NegOne"
-    elseif num == 0 then
-        numString = "Zero"
-    elseif num == 1 then
-        numString = "One"
-    elseif num == 2 then
-        numString = "Two"
-    elseif num == 3 then
-        numString = "Three"
-    elseif num == 4 then
-        numString = "Four"
-    elseif num == 5 then
-        numString = "Five"
-    else
-        numString = "Invalid input"
-    end
-    return numString
+	local numString
+	if num == -5 then
+		numString = "NegFive"
+	elseif num == -4 then
+		numString = "NegFour"
+	elseif num == -3 then
+		numString = "NegThree"
+	elseif num == -2 then
+		numString = "NegTwo"
+	elseif num == -1 then
+		numString = "NegOne"
+	elseif num == 0 then
+		numString = "Zero"
+	elseif num == 1 then
+		numString = "One"
+	elseif num == 2 then
+		numString = "Two"
+	elseif num == 3 then
+		numString = "Three"
+	elseif num == 4 then
+		numString = "Four"
+	elseif num == 5 then
+		numString = "Five"
+	else
+		numString = "Invalid input"
+	end
+	return numString
 end
 
 -- convert x and y to string representations
 while(true)do
-    _G.xString = intToString(_G.x)
-    _G.yString = intToString(_G.y)
+_G.xString = intToString(_G.x)
+_G.yString = intToString(_G.y)
 
-    _G.xyString = _G.xString + _G.yString
-    print(_G.xyString)
-end
+_G.xyString = _G.xString + _G.yString
+	print(_G.xyString)
+	end
