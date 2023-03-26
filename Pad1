@@ -1,0 +1,7 @@
+local part = script.Parent
+
+part.Touched:Connect(function(partB)
+	if partB.Parent:FindFirstChild("Humanoid") then
+		partB.Parent:PivotTo(game.Workspace.Pad2.CFrame + Vector3.new(0,5,0))
+	end
+end)
