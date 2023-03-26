@@ -1,0 +1,2 @@
+local Sound = game:GetService("Sound")
+local backgroundMusic = Sound.BackgroundMusic
