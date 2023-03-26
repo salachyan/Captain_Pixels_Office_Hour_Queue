@@ -1,0 +1,27 @@
+
+_G.winCounter = 0
+
+-- get the character
+local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+
+-- wait for the character to touch a part
+
+_G.xyString.Touched:Connect(function(part)
+	print(_G.xyString)
+	local touchedPart = part.Name
+	local Vectorx = Vector3(382.4, 43, -254.8)
+	if tostring(touchedPart) == _G.xyString then
+		_G.winCounter += 1
+		teleport()
+	end
+end)
+
+function teleport()
+	local part = script.Parent
+
+	part.Touched:Connect(function(partB)
+		if partB.Parent:FindFirstChild("Humanoid") then
+			partB.Parent:PivotTo(game.Workspace.Pad2.CFrame + Vector3.new(0,5,0))
+		end
+	end)
+end
